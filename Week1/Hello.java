@@ -12,5 +12,21 @@ public class Hello{
 
         System.out.print("This is my first program\n");
         System.out.print("I am on module ST4003CEM");
+
+        /* 3. Write a program that prints the following output:
+            A "quoted" String is
+            'much' better if you learn
+            the rules of "escape sequences."
+            Also, "" represents an empty
+            String. Don't forget: use \"
+            instead of " !
+            '' is not the same as " */
+
+        System.out.println("A \"quoted\" string is");
+        System.out.println("\'much\' better if you learn");
+        System.out.println("the rules of \"escape sequence\"");
+        System.out.println("Also, \"\" represents an empty string.");
+        System.out.println("Don't forget:  use \" \ninstead of \"! \n'' is not the same as \"");
+
     }
 }
