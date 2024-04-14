@@ -28,5 +28,11 @@ public class Hello{
         System.out.println("Also, \"\" represents an empty string.");
         System.out.println("Don't forget:  use \" \ninstead of \"! \n'' is not the same as \"");
 
+        /* 4. WAP that prints the following pattern:
+                *
+                **
+                ***
+                **** */
+        System.out.print("*\n**\n***\n****");
     }
 }
