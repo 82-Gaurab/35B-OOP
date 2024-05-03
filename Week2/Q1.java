@@ -13,5 +13,6 @@ public class Q1 {
         else{
             System.out.println("You are not eligible to vote");
         }
+        scan.close();
     }    
 }
