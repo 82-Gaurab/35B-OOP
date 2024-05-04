@@ -14,5 +14,6 @@ public class Q2 {
         int time = scan.nextInt();
         double SI = (principleAmount *rate*time)/100;
         System.out.println("Simple interest is:"+SI);
+        scan.close();
     }
 }
