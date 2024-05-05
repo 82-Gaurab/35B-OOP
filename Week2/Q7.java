@@ -12,10 +12,11 @@ public class Q7 {
         String name = scan.next();
         System.out.println("Enter your roll no: ");
         int roll = scan.nextInt();
+        String emptyString = scan.nextLine();
         System.out.println("Enter your field of interest: ");
         String interest = scan.nextLine();
         System.out.println("Hey, my name is "+name+ " and my roll number is "+ roll+".");
-        System.out.println("My field of interest are "+interest);
+        System.out.println("My field of interest are "+interest+".");
         scan.close();
     }
 }
