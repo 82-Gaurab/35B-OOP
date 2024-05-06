@@ -2,7 +2,7 @@ package Week3;
 
 import java.util.Scanner;
 
-public class Q1 {
+public class maximum {
     /* find the maximum between three numbers. */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

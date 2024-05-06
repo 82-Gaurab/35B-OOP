@@ -2,7 +2,7 @@ package Week3;
 
 import java.util.Scanner;
 
-public class Q2 {
+public class PositiveNegative {
     /* check whether a number is negative, positive, or zero. */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
