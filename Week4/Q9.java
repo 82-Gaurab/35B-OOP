@@ -30,5 +30,6 @@ public class Q9 {
         System.out.println("Equal than fifty: "+equal);
         System.out.println("Avg of more than fifty: "+(avgGreater/greater));
         System.out.println("Avg of less than fifty: "+(avgLesser/lesser));
+        scan.close();
     }
 }

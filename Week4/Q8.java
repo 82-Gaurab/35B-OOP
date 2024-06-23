@@ -17,6 +17,7 @@ public class Q8 {
         for(char i: rev){
             System.out.print(i);
         }
+        scan.close();
 
     }
 }

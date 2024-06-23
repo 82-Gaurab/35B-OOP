@@ -17,5 +17,6 @@ public class Q7 {
             }
         }
         System.out.println("HCF : "+hcf);
+        scan.close();
     }
 }

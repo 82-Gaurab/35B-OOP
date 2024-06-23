@@ -1,3 +1,5 @@
+package Week4;
+
 import java.util.Scanner;
 
 public class Q5 {
@@ -16,5 +18,6 @@ public class Q5 {
             System.out.println("Enter y to continue: ");
             yn = scan.next().charAt(0);
         }while(yn=='y');
+        scan.close();
     }
 }
