@@ -10,7 +10,7 @@ public class Q1 {
         String name = scan.next();
 
         for (int i = 0;i<5;i++){
-            System.out.print("Hello" + name);
+            System.out.print("Hello " + name+ "\n");
         }
 
     }
