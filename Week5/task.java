@@ -38,10 +38,16 @@ public class task {
         return num1*num2*num3;
     }
 
+    // 5. Write a program for calculating Simple Interest using a method and print the result from the method itself.
+    public static void SI(int principle, int rate, int time){
+        double simpleInterest = (principle*rate*time)/100;
+        System.out.printf("Simple Interest = %f",simpleInterest);
+    }
     public static void main(String[] args) {
         prime(12);
         even(7);
         table(5);
         System.out.println("The multliplication = "+ multliplication(3, 4, 10));
+        SI(1000, 4, 5);
     }
 }
