@@ -33,9 +33,15 @@ public class task {
         }
     }
 
+    // 4. Write a program for multiplying 3 numbers using a method and return the result and print the result from the main method.
+    public static int multliplication(int num1,int num2, int num3){
+        return num1*num2*num3;
+    }
+
     public static void main(String[] args) {
         prime(12);
         even(7);
         table(5);
+        System.out.println("The multliplication = "+ multliplication(3, 4, 10));
     }
 }
