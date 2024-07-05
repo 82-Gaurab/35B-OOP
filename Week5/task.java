@@ -26,8 +26,16 @@ public class task {
         }
     }
 
+    // 3. Make a method to print the table of a given number n.
+    public static void table(int n){
+        for(int i = 1; i <=10;i++){
+            System.out.printf("%d X %d = %d\n",n,i,n*i );
+        }
+    }
+
     public static void main(String[] args) {
         prime(12);
         even(7);
+        table(5);
     }
 }
