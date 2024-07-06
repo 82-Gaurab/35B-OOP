@@ -82,6 +82,28 @@ public class task {
         System.out.println("Fibonacci = " + c);
     }
 
+    // 9. Write a Java program to find the greatest common divisor (GCD) of two numbers.
+    public static void GCD(int num1,int num2){
+        if(num1 < num2){
+            int c = 0;
+            for (int i = 1; i<=num1;i++){
+                if(num1 % i == 0 && num2 % i ==0){
+                    c = i;
+                }
+            }
+            System.out.println("GCD = "+c);
+        }
+        else{
+            int c = 0;
+            for (int i = 1; i<=num2;i++){
+                if(num1 % i == 0 && num2 % i ==0){
+                    c = i;
+                }
+            }
+            System.out.println("GCD = "+c);
+        }
+    }
+
     public static void main(String[] args) {
         prime(12);
         even(7);
@@ -91,5 +113,6 @@ public class task {
         System.out.println("Area of rectangle = " + area(25, 15));
         System.out.println("Factorial = " + factorial(2));
         Fibonacci(6);
+        GCD(90, 160);
     }
 }
