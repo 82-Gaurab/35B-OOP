@@ -6,9 +6,10 @@ public class task {
     public static void prime(int num) {
         int count = 0;
         int i = 1;
-        while (num % i == 0) {
-            count++;
-            i++;
+        for (i = 1;i<num;i++){
+            if(num % i == 0){
+                count++;
+            }
         }
         if (count > 1) {
             System.out.printf("%d is not prime\n", num);
@@ -104,6 +105,34 @@ public class task {
         }
     }
 
+    // 10. Write a Java program to display all prime numbers less than a given number 
+    // and count all the prime numbers less than that number using functions.  
+    public static void print_prime_less_than(int n){
+        int count =0;
+        for (int i = 2; i< n;i++){
+            if(is_prime(i)){
+                System.out.println(i);
+                count++;
+            }
+        }
+        System.out.println("The number of prime nos less then given number = "+count);
+    }
+
+    public static boolean is_prime(int n){
+        int count = 0;
+        int i;
+        for (i = 1;i<n;i++){
+            if(n % i == 0){
+                count++;
+            }
+        }
+        if (count > 1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
     public static void main(String[] args) {
         prime(12);
         even(7);
@@ -114,5 +143,6 @@ public class task {
         System.out.println("Factorial = " + factorial(2));
         Fibonacci(6);
         GCD(90, 160);
+        print_prime_less_than(100);
     }
 }
