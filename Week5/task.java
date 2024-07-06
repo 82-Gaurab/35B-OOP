@@ -48,6 +48,18 @@ public class task {
     public static int area(int length, int breadth){
         return length*breadth;
     }
+
+    // 7. Calculates the factorial of a given number using the Java method.
+    public static int factorial(int n ){
+        if (n==0){
+            return 1;
+        }
+        else{
+            return n*factorial(n-1);
+        }
+    }
+
+
     public static void main(String[] args) {
         prime(12);
         even(7);
@@ -55,5 +67,6 @@ public class task {
         System.out.println("The multliplication = "+ multliplication(3, 4, 10));
         SI(1000, 4, 5);
         System.out.println("Area of rectangle = "+ area(25,15));
+        System.out.println("Factorial = "+factorial(7));
     }
 }
