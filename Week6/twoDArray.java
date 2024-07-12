@@ -26,5 +26,14 @@ public class twoDArray {
             }
         }
         System.out.println("Transpose : " + Arrays.deepToString(transpose));
+
+        // 3. Write a java program to print mirror 2X2 matrices
+        int[][] mirroredMatrix = new int[2][2];
+        
+        for (int i = 0; i < 2; i++) {
+            mirroredMatrix[i][0] = m3[i][1];
+            mirroredMatrix[i][1] = m3[i][0];
+        }
+        System.out.println("Mirrored matirx:\n"+Arrays.deepToString(mirroredMatrix));
     }
 }
