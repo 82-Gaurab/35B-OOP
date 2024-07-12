@@ -30,5 +30,20 @@ public class oneDArray {
         } else {
             System.out.println("The array does not contain the value.");
         }
+
+        // 3. Write a Java program to find the maximum and minimum value of an array.
+        int max = ar1[0];
+        for (int i : ar1) {
+            if (i > max) {
+                max = i;
+            }
+        }
+        System.out.println("Maximum: " + max);
+        for (int i : ar1) {
+            if (i < max) {
+                max = i;
+            }
+        }
+        System.out.println("Minimum: " + max);
     }
 }
