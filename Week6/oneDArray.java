@@ -1,5 +1,7 @@
 package Week6;
 
+import java.util.Arrays;
+
 public class oneDArray {
     public static void main(String[] args) {
         // 1. Write a Java program to calculate the average value of array element.
@@ -45,5 +47,18 @@ public class oneDArray {
             }
         }
         System.out.println("Minimum: " + max);
+
+        // 4. Write a Java program to revers the element of a one-dimensional array.
+        int minIndex = 0;
+        int maxIndex = ar1.length - 1;
+        System.out.println("Before reverse: " + Arrays.toString(ar1));
+        while (minIndex != maxIndex) {
+            int temp = ar1[minIndex];
+            ar1[minIndex] = ar1[maxIndex];
+            ar1[maxIndex] = temp;
+            minIndex++;
+            maxIndex--;
+        }
+        System.out.println("After reversal: " + Arrays.toString(ar1));
     }
 }
