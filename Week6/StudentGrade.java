@@ -51,7 +51,7 @@ public class StudentGrade {
                 case 4:
                     System.out.println("Largest value: " + Collections.max(grades));
                     break;
-                    
+
                 case 5:
                     System.out.println("Smallest value: " + Collections.min(grades));
                     break;
@@ -62,6 +62,7 @@ public class StudentGrade {
             }
 
         }
+        scan.close();
 
     }
 }
