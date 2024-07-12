@@ -12,5 +12,23 @@ public class oneDArray {
         }
         float avg = sum / count;
         System.out.println(avg);
+
+        // 2. Write a Java program to test if an array contains a specific value.
+        int [] ar1 = {9,8,7,6,5,4,3};
+        int x = 6;
+        boolean contain = false;
+        for(int i : ar1){
+            if(i == x){
+                contain = true;
+                break;
+            } else {
+                contain = false;
+            }
+        }
+        if (contain){
+            System.out.println("The array contains the value.");
+        } else {
+            System.out.println("The array does not contain the value.");
+        }
     }
 }
