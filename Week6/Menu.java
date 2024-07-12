@@ -10,16 +10,11 @@ public class Menu {
         ArrayList<Integer> arr = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         System.out.println("Choose the Options: ");
-        System.out.print("1.    Add an element to the array\r\n" + //
-                "\r\n" + //
-                "2.    Display all the elements of the array\r\n" + //
-                "\r\n" + //
-                "3.    Reverse the elements of the array\r\n" + //
-                "\r\n" + //
-                "4.    Find the largest element of the array\r\n" + //
-                "\r\n" + //
-                "5.    Find the smallest element of the array\r\n" + //
-                "\r\n" + //
+        System.out.print("1.    Add an element to the array\r\n" + 
+                "2.    Display all the elements of the array\r\n" + 
+                "3.    Reverse the elements of the array\r\n"  + 
+                "4.    Find the largest element of the array\r\n"  + 
+                "5.    Find the smallest element of the array\r\n"  + 
                 "6.    Exit the program");
         while(run){
             System.out.println();
