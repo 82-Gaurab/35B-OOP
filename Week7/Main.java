@@ -28,10 +28,26 @@ public class Main {
         d2.setName("Charlie");
         d2.setBreed("Bulldog");
 
-        System.out.println("Name of dog 1: "+d1.getName());
-        System.out.println("Breed of dog 1: "+d1.getBreed());
-        System.out.println("Breed of dog 2: "+d2.getName());
-        System.out.println("Breed of dog 2: "+d2.getBreed());
+        System.out.println("Name of dog 1: " + d1.getName());
+        System.out.println("Breed of dog 1: " + d1.getBreed());
+        System.out.println("Breed of dog 2: " + d2.getName());
+        System.out.println("Breed of dog 2: " + d2.getBreed());
+        System.out.println();
+
+        // Instance of Employee
+        Employee employee = new Employee();
+        employee.setName("Joe");
+        employee.setJob("Manager");
+        employee.setTitle("HR");
+        employee.setSalary(20000);
+
+        System.out.println("Emplyee: ");
+        System.out.println("Name: "+employee.getName());
+        System.out.println("Job: "+employee.getJob());
+        System.out.println("Title: "+employee.getTitle());
+        System.out.println("Salary: "+employee.getSalary());
+        System.out.println();
+
     }
 }
 
@@ -95,11 +111,11 @@ class SimpleInterest {
 // attribute. Create two instances of the "Dog" class, set their attributes
 // using the constructor and modify the attributes using the setter methods and
 // print the updated values.
-class Dog{
+class Dog {
     private String name;
     private String breed;
 
-    Dog(String name, String breed){
+    Dog(String name, String breed) {
         this.name = name;
         this.breed = breed;
     }
@@ -112,7 +128,7 @@ class Dog{
         return breed;
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -120,4 +136,39 @@ class Dog{
         this.breed = breed;
     }
 
+}
+
+// 4. Write a Java program to create a class called "Employee" with a name, job
+// title, and salary attributes, and methods to calculate and update salary.
+class Employee{
+    private String name;
+    private String job;
+    private String title;
+    private int salary;
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getJob() {
+        return job;
+    }
+    public void setJob(String job) {
+        this.job = job;
+    }
+    public String getTitle() {
+        return title;
+    }
+    public void setTitle(String title) {
+        this.title = title;
+    }
+    
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+    public int getSalary() {
+        return salary;
+    }
 }
