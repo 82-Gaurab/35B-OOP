@@ -21,5 +21,15 @@ public class Main {
 
         Circles circles = new Circles(7);
         circles.calculateArea();
+        System.out.println();
+
+        // Instance of Classes of Book
+        FictionBook fBook = new FictionBook("Wizard of OZ", "Joe");
+        NonFictionBook nBook = new NonFictionBook("Steve Jobs", "Steve jobs");
+        TechnicalBook tBook = new TechnicalBook("Data Science and Algorithm", "Bob");
+
+        fBook.displayDetails();
+        nBook.displayDetails();
+        tBook.displayDetails();
     }
 }
