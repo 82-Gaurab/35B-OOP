@@ -25,6 +25,17 @@ public class Main {
         bankTransfer bank = new bankTransfer();
         bank.validation();
         bank.transaction();
+        System.out.println();
+
+        // Q3 rental system
+        car C = new car();
+        C.rent();
+
+        motorcycles MC = new motorcycles();
+        MC.rent();
+
+        bicycles b = new bicycles();
+        b.rent();
     }
 
 }
@@ -87,6 +98,7 @@ class Triangles extends Shape {
 // Q2. E commerce application
 abstract class Payment {
     abstract void validation();
+
     abstract void transaction();
 }
 
@@ -95,43 +107,76 @@ class creditCard extends Payment {
     @Override
     void transaction() {
         System.out.println("Transaction is made");
-        
+
     }
 
     @Override
     void validation() {
         System.out.println("Credit card is valid.");
-        
+
     }
-    
+
 }
+
 class PayPal extends Payment {
 
     @Override
     void transaction() {
         System.out.println("Transaction is made");
-        
+
     }
 
     @Override
     void validation() {
         System.out.println("Pay pal is valid.");
-        
+
     }
-    
+
 }
+
 class bankTransfer extends Payment {
 
     @Override
     void transaction() {
         System.out.println("Transaction is made");
-        
+
     }
 
     @Override
     void validation() {
         System.out.println("Bank Transfer is valid.");
-        
+
+    }
+
+}
+
+//  Q3. Car rental system
+
+abstract class Vehicle{
+    abstract void rent();
+}
+
+class car extends Vehicle {
+
+    @Override
+    void rent() {
+        System.out.println("Cost for renting a car is 10000");
+    }
+    
+}
+class motorcycles extends Vehicle {
+
+    @Override
+    void rent() {
+        System.out.println("Cost for renting a motocycles is 6000");
+    }
+    
+}
+class bicycles extends Vehicle {
+
+    @Override
+    void rent() {
+        System.out.println("Cost for renting a bicycles is 3000");
     }
     
 }
