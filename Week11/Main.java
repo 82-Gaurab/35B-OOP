@@ -5,14 +5,28 @@ public class Main {
         // Q1 shape drawing application
         Rectangles r = new Rectangles(5, 7);
         r.calculateArea();
-        
+
         Circles circles = new Circles(9);
         circles.calculateArea();
 
         Triangles triangles = new Triangles(2, 7);
         triangles.calculateArea();
+        System.out.println();
+
+        // Q2 payment methods
+        creditCard card = new creditCard();
+        card.validation();
+        card.transaction();
+
+        PayPal pal = new PayPal();
+        pal.validation();
+        pal.transaction();
+
+        bankTransfer bank = new bankTransfer();
+        bank.validation();
+        bank.transaction();
     }
-    
+
 }
 
 // 1. You are developing a shape drawing application. There are different types
@@ -68,4 +82,56 @@ class Triangles extends Shape {
     void calculateArea() {
         System.out.println("Area of triangle: " + base * height * 0.5);
     }
+}
+
+// Q2. E commerce application
+abstract class Payment {
+    abstract void validation();
+    abstract void transaction();
+}
+
+class creditCard extends Payment {
+
+    @Override
+    void transaction() {
+        System.out.println("Transaction is made");
+        
+    }
+
+    @Override
+    void validation() {
+        System.out.println("Credit card is valid.");
+        
+    }
+    
+}
+class PayPal extends Payment {
+
+    @Override
+    void transaction() {
+        System.out.println("Transaction is made");
+        
+    }
+
+    @Override
+    void validation() {
+        System.out.println("Pay pal is valid.");
+        
+    }
+    
+}
+class bankTransfer extends Payment {
+
+    @Override
+    void transaction() {
+        System.out.println("Transaction is made");
+        
+    }
+
+    @Override
+    void validation() {
+        System.out.println("Bank Transfer is valid.");
+        
+    }
+    
 }
